@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar code HERE -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#home">Rachel's Riceballs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- jumbotron hero-->
+    <section id="home" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to Rachel's Riceballs</h1>
+            <p class="lead">At Rachel's Riceballs, we offer a variety of riceballs perfect for any occasion. Our riceballs are freshly made daily and always delicious. Stop by today and try one!</p>
+            <a href="#menu" class="btn btn-dark btn-lg">View Menu</a>
+        </div>
+    </section>
+    <!-- Menu with Cards -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="text-center text-white">Menu Highlights</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="crabmeat.jpg" class="card-img-top" alt="Crabmeat Avocado">
+                        <div class="card-body">
+                            <h5 class="card-title">Crabmeat Avocado</h5>
+                            <p class="card-text">Riceball with crabmeat, avocado, and spicy mayo.</p>
+                            <p><strong>Price:</strong> $5.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="tuna.jpg" class="card-img-top" alt="Tuna Avocado">
+                        <div class="card-body">
+                            <h5 class="card-title">Tuna Avocado</h5>
+                            <p class="card-text">Riceball with tuna, avocado, and soy sauce.</p>
+                            <p><strong>Price:</strong> $6.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="salmon.jpg" class="card-img-top" alt="Salmon Avocado">
+                        <div class="card-body">
+                            <h5 class="card-title">Salmon Avocado</h5>
+                            <p class="card-text">Riceball with salmon, avocado, furikake, and mayo.</p>
+                            <p><strong>Price:</strong> $7.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 250px; /* You can adjust this value to your preferred height */
+            object-fit: cover; /* Ensures the image maintains its aspect ratio and covers the area */
+        }
+    </style>
+    
+    <!-- Customer Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="text-center">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <blockquote>
+                        "Wow, this is the best riceball I've ever eaten in my life!" <!-- Testimonial 1 -->
+                        <footer>- Jasmina</footer> <!-- Customer 1 Name -->
+                    </blockquote>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <blockquote>
+                        "The service is so great. I will definitely come back and bring all my friends!" <!-- Testimonial 2 -->
+                        <footer>- Genesis</footer> <!-- Customer 2 Name -->
+                    </blockquote>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <blockquote>
+                        "If I could eat these riceballs for the rest of my life, I 100 percent" <!-- Testimonial 3 -->
+                        <footer>- Nicole</footer> <!-- Customer 3 Name -->
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="date">Reservation Date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Special Requests"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+</body>
+</html>
